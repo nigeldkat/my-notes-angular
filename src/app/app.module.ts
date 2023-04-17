@@ -14,13 +14,19 @@ import { MatIconModule} from '@angular/material/icon';
 import { MatSidenavModule} from '@angular/material/sidenav';
 import { MatListModule} from '@angular/material/list';
 import { MatButtonModule} from '@angular/material/button';
+import { Page3Component } from './page3/page3.component';
+import { AboutComponent } from './about/about.component';
+import { SupportComponent } from './support/support.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     Page1Component,
     Page2Component,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    Page3Component,
+    AboutComponent,
+    SupportComponent
   ],
   imports: [
     BrowserModule,
