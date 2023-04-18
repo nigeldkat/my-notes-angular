@@ -8,6 +8,9 @@ import { Page3Component } from './page3/page3.component';
 import { AboutComponent } from './about/about.component';
 import { SupportComponent } from './support/support.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { NoteListComponent } from './notes/notelist.component';
+import { NoteItemsComponent } from './notes/noteitems.component';
+import { LogInComponent } from './login/login.component';
 
 
 const routes: Routes = [
@@ -15,6 +18,9 @@ const routes: Routes = [
   {path: 'page2', component: Page2Component},
   {path: 'page3', component: Page3Component},
   {path: 'about', component: AboutComponent},
+  {path: 'notelist', component: NoteListComponent},
+  {path: 'noteitems', component: NoteItemsComponent},
+  {path: 'login', component: LogInComponent},
   {path: 'support', component: SupportComponent},
   {path: '', redirectTo: '/page1', pathMatch: 'full'},
   {path: '**', component: PageNotFoundComponent},
