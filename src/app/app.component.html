@@ -10,7 +10,9 @@
       <a mat-list-item [routerLink]="'/about'"> About </a>
       <a mat-list-item [routerLink]="'/support'"> Support </a>
       <a mat-list-item [routerLink]="'/contacts'"> Contacts </a>
-      <a mat-list-item [routerLink]="'/create-contact'"> Create Contact </a>
+      <a mat-list-item [routerLink]="'/notelist'"> Note List </a>
+      <a mat-list-item [routerLink]="'/noteitems'"> Note Item </a>
+      <a mat-list-item [routerLink]="'/login'"> Log In </a>
       <a mat-list-item [routerLink]="'/activities'"> Activities </a>
       <a mat-list-item [routerLink]="'/create-activity'"> Create Activity </a>
       <a mat-list-item (click)="sidenav.toggle()" href="" mat-list-item>Close</a>
@@ -27,12 +29,8 @@
       My Account
     </mat-toolbar>
     <div class="main-content">
-      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-      <h1>Angular Router</h1>
-      <nav>
-        <a routerLink="/page1" routerLinkActive="active" ariaCurrentWhenActive="page">Page1</a>
-        <a routerLink="/page2" routerLinkActive="active" ariaCurrentWhenActive="page">Page2</a>
-      </nav> 
+      <p>maybe we will put something here but for now just some added space</p>
+      <br><br><br>
       <router-outlet></router-outlet>
     </div>
     
