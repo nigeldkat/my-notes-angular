@@ -12,8 +12,24 @@ import { NoteListComponent } from './notes/notelist.component';
 import { NoteItemsComponent } from './notes/noteitems.component';
 import { LogInComponent } from './login/login.component';
 
+// firebase auth related components
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { SignInComponent } from './components/sign-in/sign-in.component';
+import { SignUpComponent } from './components/sign-up/sign-up.component';
+import { ForgotPasswordComponent } from './components/forgot-password/forgot-password.component';
+import { VerifyEmailComponent } from './components/verify-email/verify-email.component';
 
-const routes: Routes = [
+// route guard
+import { AuthGuard } from './shared/guard/auth.guard';
+
+
+const routes: Routes = [ 
+  { path: '', redirectTo: '/sign-in', pathMatch: 'full' },
+  { path: 'sign-in', component: SignInComponent },
+  { path: 'register-user', component: SignUpComponent },
+  { path: 'dashboard', component: DashboardComponent },
+  { path: 'forgot-password', component: ForgotPasswordComponent },
+  { path: 'verify-email-address', component: VerifyEmailComponent },
   {path: 'page1', component: Page1Component},
   {path: 'page2', component: Page2Component},
   {path: 'page3', component: Page3Component},
@@ -22,7 +38,7 @@ const routes: Routes = [
   {path: 'noteitems', component: NoteItemsComponent},
   {path: 'login', component: LogInComponent},
   {path: 'support', component: SupportComponent},
-  {path: '', redirectTo: '/page1', pathMatch: 'full'},
+  //{path: '', redirectTo: '/page1', pathMatch: 'full'},
   {path: '**', component: PageNotFoundComponent},
 ];
 
