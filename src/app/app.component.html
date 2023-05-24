@@ -3,7 +3,12 @@
   <mat-sidenav mode="side" #sidenav opened position="start">
     left panel
     <mat-nav-list>
-
+      <a mat-list-item [routerLink]="'/sign-in'"> sign-in </a>
+      <a mat-list-item [routerLink]="'/register-user'"> register-user </a>
+      <a mat-list-item [routerLink]="'/dashboard'"> dashboard </a>
+      <a mat-list-item [routerLink]="'/forgot-password'"> forgot-password </a>
+      <a mat-list-item [routerLink]="'/verify-email-address'"> verify-email-address </a>
+      
       <a mat-list-item [routerLink]="'/page1'"> Page1 </a>
       <a mat-list-item [routerLink]="'/page2'"> Page2 </a>
       <a mat-list-item [routerLink]="'/page3'"> Page3 </a>
