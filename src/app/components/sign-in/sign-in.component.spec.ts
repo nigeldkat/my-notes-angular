@@ -6,7 +6,7 @@ describe('SignInComponent', () => {
   let component: SignInComponent;
   let fixture: ComponentFixture<SignInComponent>;
 
-  beforeEach(async () => {
+  beforeEach(async () => { //this is only difference from older version. new version combines two before each into one
     await TestBed.configureTestingModule({
       declarations: [ SignInComponent ]
     })

@@ -23,6 +23,8 @@ import { MatIconModule} from '@angular/material/icon';
 import { MatSidenavModule} from '@angular/material/sidenav';
 import { MatListModule} from '@angular/material/list';
 import { MatButtonModule} from '@angular/material/button';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
 
 //form related
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -73,6 +75,8 @@ import { AuthService } from "./shared/services/auth.service";
     MatSidenavModule,
     MatListModule,
     MatButtonModule,
+    MatFormFieldModule,
+    MatInputModule,
     FormsModule, 
     ReactiveFormsModule,
     AngularFireModule.initializeApp(environment.firebase),
