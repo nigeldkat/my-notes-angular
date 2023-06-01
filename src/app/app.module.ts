@@ -12,8 +12,9 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { Page3Component } from './page3/page3.component';
 import { AboutComponent } from './about/about.component';
 import { SupportComponent } from './support/support.component';
-import { NoteListComponent } from './notes/notelist.component';
-import { NoteItemsComponent } from './notes/noteitems.component';
+//import { NoteListComponent } from './notes/notelist.component';
+//import { NoteItemsComponent } from './notes/noteitems.component';
+import { NoteComponent } from './note/note.component';
 import { LogInComponent } from './login/login.component';
 
 //angular material related
@@ -60,8 +61,9 @@ import { AuthService } from "./shared/services/auth.service";
     Page3Component,
     AboutComponent,
     SupportComponent,
-    NoteItemsComponent,
-    NoteListComponent,
+    //NoteItemsComponent,
+    //NoteListComponent,
+    NoteComponent,
     LogInComponent,
     DashboardComponent,
     SignInComponent,

@@ -8,8 +8,9 @@ import { Page3Component } from './page3/page3.component';
 import { AboutComponent } from './about/about.component';
 import { SupportComponent } from './support/support.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { NoteListComponent } from './notes/notelist.component';
-import { NoteItemsComponent } from './notes/noteitems.component';
+//import { NoteListComponent } from './notes/notelist.component';
+//import { NoteItemsComponent } from './notes/noteitems.component';
+import { NoteComponent } from './note/note.component';
 import { LogInComponent } from './login/login.component';
 
 // firebase auth related components
@@ -34,8 +35,7 @@ const routes: Routes = [
   {path: 'page2', component: Page2Component},
   {path: 'page3', component: Page3Component},
   {path: 'about', component: AboutComponent},
-  {path: 'notelist', component: NoteListComponent},
-  {path: 'noteitems', component: NoteItemsComponent},
+  {path: 'note', component: NoteComponent},
   {path: 'login', component: LogInComponent},
   {path: 'support', component: SupportComponent},
   //{path: '', redirectTo: '/page1', pathMatch: 'full'},
