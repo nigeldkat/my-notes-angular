@@ -15,7 +15,7 @@ import { SupportComponent } from './support/support.component';
 //import { NoteListComponent } from './notes/notelist.component';
 //import { NoteItemsComponent } from './notes/noteitems.component';
 import { NoteComponent } from './note/note.component';
-import { LogInComponent } from './login/login.component';
+//import { LogInComponent } from './login/login.component';
 
 //angular material related
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -61,10 +61,8 @@ import { AuthService } from "./shared/services/auth.service";
     Page3Component,
     AboutComponent,
     SupportComponent,
-    //NoteItemsComponent,
-    //NoteListComponent,
     NoteComponent,
-    LogInComponent,
+    //LogInComponent,
     DashboardComponent,
     SignInComponent,
     SignUpComponent,

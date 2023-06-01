@@ -11,7 +11,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 //import { NoteListComponent } from './notes/notelist.component';
 //import { NoteItemsComponent } from './notes/noteitems.component';
 import { NoteComponent } from './note/note.component';
-import { LogInComponent } from './login/login.component';
+//import { LogInComponent } from './login/login.component';
 
 // firebase auth related components
 import { DashboardComponent } from './components/dashboard/dashboard.component';
@@ -36,7 +36,6 @@ const routes: Routes = [
   {path: 'page3', component: Page3Component},
   {path: 'about', component: AboutComponent},
   {path: 'note', component: NoteComponent},
-  {path: 'login', component: LogInComponent},
   {path: 'support', component: SupportComponent},
   //{path: '', redirectTo: '/page1', pathMatch: 'full'},
   {path: '**', component: PageNotFoundComponent},
