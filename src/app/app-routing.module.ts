@@ -6,6 +6,7 @@ import { AboutComponent } from './about/about.component';
 import { SupportComponent } from './support/support.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { NoteComponent } from './note/note.component';
+import { NotemembersComponent } from './notemembers/notemembers.component';
 
 // firebase auth related components
 import { DashboardComponent } from './components/dashboard/dashboard.component';
@@ -27,6 +28,7 @@ const routes: Routes = [
   { path: 'verify-email-address', component: VerifyEmailComponent },
   {path: 'about', component: AboutComponent},
   {path: 'note/:id/:desc', component: NoteComponent},
+  {path: 'notemembers/:id', component: NotemembersComponent},
   {path: 'support', component: SupportComponent},
   {path: '**', component: PageNotFoundComponent},
 ];
