@@ -1,53 +1,46 @@
-<div class="displayTable">
-    <div class="displayTableCell">
-      <div class="authBlock">
-        <h3>Sign Up</h3>
-        <div class="formGroup">
-          <input
-            type="email"
-            class="formControl"
-            placeholder="Email Address"
-            #userEmail
-            required
-          />
-        </div>
-        <div class="formGroup">
-          <input
-            type="password"
-            class="formControl"
-            placeholder="Password"
-            #userPwd
-            required
-          />
-        </div>
-        <div class="formGroup">
-          <input
-            type="button"
-            class="btn btnPrimary"
-            value="Sign Up"
-            (click)="authService.SignUp(userEmail.value, userPwd.value)"
-          />
-        </div>
-        <div class="formGroup">
-          <span class="or"><span class="orInner">Or</span></span>
-        </div>
-        <!-- Continue with Google -->
-        <div class="formGroup">
-          <button
-            type="button"
-            class="btn googleBtn"
-            (click)="authService.GoogleAuth()"
-          >
-            <i class="fab fa-google-plus-g"></i>
-            Continue with Google
-          </button>
-        </div>
-      </div>
-      <div class="redirectToLogin">
-        <span
-          >Already have an account?
-          <span class="redirect" routerLink="/sign-in">Log In</span></span
-        >
-      </div>
-    </div>
-  </div>
+<section class="signup-form">
+  <form fxLayout="column" 
+    fxLayoutAlign="center center" 
+    fxLayoutGap="10px" 
+    #f="ngForm" 
+    (ngSubmit)="onSubmit(f)">
+    <h3>Sign Up</h3>
+    <mat-form-field>
+      <input type="email" 
+        matInput 
+        placeholder="Your email" 
+        ngModel name="email" 
+        email 
+        required 
+        #emailInput="ngModel">
+      <mat-error *ngIf="emailInput.hasError('required')">Your Email is required.</mat-error>
+      <mat-error *ngIf="!emailInput.hasError('required')">E-Mail is invalid.</mat-error>
+    </mat-form-field>
+    <mat-form-field hintLabel="Should be at least 6 characters long.">
+      <input type="password" 
+        matInput 
+        placeholder="Your password" 
+        ngModel name="password" 
+        required 
+        minlength="6" 
+        #pwInput="ngModel">
+      <mat-hint align="end">{{ pwInput.value?.length }} / 6</mat-hint>
+      <mat-error>Has to be at least 6 characters long.</mat-error>
+    </mat-form-field>
+    
+    <!-- 
+      Original code has a "username" field which is read into the submission
+      However, new version of SignUp doesn't allow for a username
+      Hence, username details commented out
+     -->
+
+    <!-- <mat-form-field>
+      <input matInput 
+        placeholder="Your user name" 
+        ngModel name="displayname" 
+        required>
+        <mat-error>User Name is Required.</mat-error>
+    </mat-form-field> -->
+    <button type="submit" mat-raised-button color="primary" [disabled]="f.invalid">Submit</button>
+  </form>
+</section>
